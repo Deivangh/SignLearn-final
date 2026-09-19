@@ -1,0 +1,22 @@
+# --- core ---
+streamlit>=1.36,<2
+pillow>=10.0
+numpy>=1.24,<2.0
+requests>=2.31
+python-dotenv>=1.0
+
+# --- reading the page ---
+pytesseract>=0.3.10
+opencv-python-headless>=4.9
+
+# --- avatar motion ---
+# Needs Python 3.9-3.12. Skip it if you only want dictionary-video mode.
+# Capped below 0.10.30: that release dropped the legacy mp.solutions API
+# (Holistic) that pose_extract.py builds on.
+mediapipe>=0.10.14,<0.10.30
+
+# --- optional, strongly recommended for sentence structure ---
+# pip install spacy && python -m spacy download en_core_web_sm
+
+# --- only for scripts/build_index.py (finds synonym-group signs) ---
+# pip install nltk && python -c "import nltk; nltk.download('wordnet')"

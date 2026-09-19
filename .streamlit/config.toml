@@ -1,0 +1,16 @@
+[server]
+# Lets us serve cached dictionary clips and pose files straight from ./static
+# instead of base64-inlining megabytes of video into the page.
+enableStaticServing = true
+maxUploadSize = 40
+
+[theme]
+base = "dark"
+primaryColor = "#F0A202"
+backgroundColor = "#0E1D26"
+secondaryBackgroundColor = "#16303E"
+textColor = "#E8EEF2"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
